@@ -51,11 +51,11 @@ def main():
 
         elif choice == '2':
             balance += deposite()
-            show_balance()
+            show_balance(balance)
 
         elif choice == '3':
             balance -= withdraw(balance)
-            show_balance()
+            show_balance(balance)
         
         elif choice == '4':
             is_running = False
