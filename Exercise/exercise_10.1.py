@@ -1,31 +1,31 @@
 def show_balance(balance):
     print(" ")
-    print("**************** Nobot bank ****************")
+    print("********************* Nobot bank *********************")
     print(f"Your Balance is: {balance:.2f}")
-    print("********************************************")
+    print("******************************************************")
 
 def deposite():
     print(" ")
-    print("**************** Nobot bank ****************")
+    print("********************** Nobot bank ********************")
     amount = float(input("Enter Amount to deposit: "))
     print(" ")
-    print("********************************************")
+    print("******************************************************")
 
     if amount < 0:
-        print("!!!!!! Please enter valide Amount !!!!!!")
+        print("!!!!!!!!!!!!! Please enter valide Amount !!!!!!!!!!!!!")
     else:
         return amount
 
 def withdraw(balance):
     print(" ")
-    print("**************** Nobot bank ****************")
+    print("********************* Nobot bank *********************")
     print(f"Your Balance is: {balance:.2f}")
     print(" ")
     amount = float(input("Enter Amount to deposit: "))
-    print("********************************************")
+    print("******************************************************")
 
     if amount > balance:
-        print("!!!!!!!!! Insufficient Balance !!!!!!!!!")
+        print("!!!!!!!!!!!!!! Insufficient Balance !!!!!!!!!!!!!!")
     else:
         return amount
 
@@ -35,12 +35,12 @@ def main():
 
     while is_running:
         print(" ")
-        print("********** Wellcome to Nobot bank **********")
+        print("************* Wellcome to Nobot bank *************")
         print("1.Show Balance")
         print("2.deposite")
         print("3.withdraw")
         print("4.exit")
-        print("********************************************")
+        print("**************************************************")
 
         choice = input("Enter your choice: ")
 
@@ -61,12 +61,12 @@ def main():
             is_running = False
         
         else:
-            print("!!!!!!!!!!! Enter valid Answer !!!!!!!!!!!")
+            print("!!!!!!!!!!!!!!! Enter valid Answer !!!!!!!!!!!!!!!")
 
     print(" ")
-    print("**************** Nobot bank ****************")
+    print("******************* Nobot bank *******************")
     print("Thank You for using Nobot bank please visite again")
-    print("********************************************")
+    print("**************************************************")
 
 if __name__ == '__main__':
     main()
