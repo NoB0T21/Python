@@ -4,7 +4,7 @@ def show_balance(balance):
     print(f"Your Balance is: {balance:.2f}")
     print("********************************************")
 
-def deposite():
+def deposite(balance):
     print(" ")
     print("**************** Nobot bank ****************")
     amount = float(input("Enter Amount to deposit: "))
@@ -29,6 +29,7 @@ def withdraw(balance):
     else:
         return amount
 
+<<<<<<< Updated upstream
 def main():
     balance = 0
     is_running = True
@@ -62,11 +63,42 @@ def main():
         
         else:
             print("!!!!!!!!!!! Enter valid Answer !!!!!!!!!!!")
+=======
+>>>>>>> Stashed changes
 
+balance = 0
+is_running = True
+while is_running:
     print(" ")
-    print("**************** Nobot bank ****************")
-    print("Thank You for using Nobot bank please visite again")
+    print("********** Wellcome to Nobot bank **********")
+    print("1.Show Balance")
+    print("2.deposite")
+    print("3.withdraw")
+    print("4.exit")
     print("********************************************")
 
-if __name__ == '__main__':
-    main()
+    choice = input("Enter your choice: ")
+
+    print(" ")
+
+    if choice == '1':
+        show_balance(balance)
+
+    elif choice == '2':
+        balance += deposite()
+        show_balance()  
+
+    elif choice == '3':
+        balance -= withdraw(balance)
+        show_balance()
+        
+    elif choice == '4':
+        is_running = False
+        
+    else:
+        print("!!!!!!!!!!! Enter valid Answer !!!!!!!!!!!")
+
+print(" ")
+print("**************** Nobot bank ****************")
+print("Thank You for using Nobot bank please visite again")
+print("********************************************")
